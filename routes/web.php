@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
+Route::get('/register', 'PagesController@register');
+Route::post('/create', 'PagesController@create')->name('create');
+Route::get('/login', 'PagesController@login');
+

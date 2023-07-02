@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('tourists', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_admin')->nullable()->default(false);
+            $table->string('username');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('email');
+            $table->string('age');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

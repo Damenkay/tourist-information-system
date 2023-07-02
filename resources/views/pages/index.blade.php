@@ -5,7 +5,7 @@
         <div class="center-glass">
             <h1>{{$title}}</h1>
             <p>
-                experience owerri
+                experience the eastern heartland
             </p>
             <button>
                 Book a Tour
@@ -18,7 +18,7 @@
             <h2 style="padding:10px 0px 20px 60px; text-align:left">Special Offer</h2>
             <div class="section2" id="fact">
     
-                <div class="centre">
+                <div class="centre"  height="400vh" width="100%">
                     <img height="400vh" width="100%">
                 </div>
     
@@ -37,7 +37,7 @@
     </div>
 
     <div class="section4">
-        <h3 style="padding-top: 40px; text-align:center">Necesary Actions</h3>
+        <h1 style="padding-top: 50px; text-align:center">Services</h1>
         <div class="inside">
             <img src="{{asset('img/IMG_2026.JPG')}}" alt="img"> 
             <div class="actionplan">
