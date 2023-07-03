@@ -8,7 +8,7 @@
                 experience the eastern heartland
             </p>
             <button>
-                Book a Tour
+               <a href="/login">Book a Tour</a> 
             </button>
         </div>
     </div>

@@ -27,27 +27,16 @@
                 <ul class="navbar-nav" style="padding-right: 80px">
 
                 <div class="dropdown">
-                    <button class="dropbtn" style="margin-right: 40px;">Register</button>
-                    <div class="dropdown-content">
-                     <a href="/register">Tourist</a>
-                    </div>
+                    <button class="dropbtn" style="margin-right: 40px;"><a class="lcontent" href="/register">Register</a></button>
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn">Login</button>
-                    <div class="dropdown-content">
-                        <a href="/login">Tourist</a>
-                    </div>
+                    <button class="dropbtn"><a class="lcontent" href="/login">Login</a></button>
                 </div>
-
-
-
                 </ul>
             </div>
-
         </div>
     </div>
-
 </nav>
 
 

@@ -14,10 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// TOURIST ROUTES
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/services', 'PagesController@services');
 Route::get('/register', 'PagesController@register');
-Route::post('/create', 'PagesController@create')->name('create');
-Route::get('/login', 'PagesController@login');
+Route::POST('/create', 'PagesController@create')->name('create');
+Route::get('/login', 'PagesController@login')->name('login');
+Route::POST('/check', 'PagesController@check')->name('check');
+Route::get('/tourist/dashboard', 'PagesController@dashboard')->name('dashboard');
+Route::get('/logout', 'PagesController@logout')->name('logout');
+
+// ADMIN ROUTES
+
 

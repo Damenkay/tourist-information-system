@@ -10,32 +10,33 @@
                 @csrf
                 <div class="results">
                     @if (Session::get('success'))
-                        <div class="alert alert-success">
+                        <span class="alert alert-success">
                             {{Session::get('success')}}
-                        </div>
+                        </span>
                     @endif
 
                     @if (Session::get('error'))
-                        <div class="alert alert-danger">
+                        <span class="alert alert-danger">
                             {{Session::get('error')}}
-                        </div>
+                        </span>
                     @endif
                 </div>
 
-
-                <div class="form-group groupflex">
-                    @error('firstname')
-                    <p class="text-danger">{{$message}}</p>    
-                    @enderror
-                
-                    <input name="firstname" type="text" class="" placeholder="Enter your firstname"  required>
-                    
+                <div class="groupflex">
 
                     <div class="form-group">
+                        @error('firstname')
+                        <span class="text-danger">{{$message}}</span>    
+                        @enderror
+                    
+                        <input name="firstname" type="text" class="" placeholder="Enter your firstname"  required>
+                        
+                    </div>
+                    <div class="form-group">
                         @error('lastname')
-                        <div class="text-danger">
+                        <span class="text-danger">
                             {{$message}}
-                        </div>      
+                        </span>      
                         @enderror
     
                         <input name="lastname" type="text" id="" class=""  placeholder="Enter your lastname" required>
@@ -43,79 +44,106 @@
                 </div>
                
                
-              
-                <div class="form-group groupflex" >
-                    @error('username')
-                    <div class="text-danger">
-                        {{$message}}
-                    </div>      
-                    @enderror
-
-                    <input name="username" type="text" id="" class=""  placeholder="Choose a username" required>
-
-
+               
+                <div class="groupflex">
+                        
+                    <div class="form-group" >
+                        @error('username')
+                        <span class="text-danger">
+                            {{$message}}
+                        </span>      
+                        @enderror
+    
+                        <input name="username" type="text" id="" class=""  placeholder="Choose a username" required>
+    
+                    </div>
 
                     <div class="form-group">
                         @error('email')
-                        <div class="text-danger">
+                        <span class="text-danger">
                             {{$message}}
-                        </div>     
+                        </span>     
                         @enderror
     
                         <input name="email" type="email" id="" class="" placeholder="Enter your email address" required>
                     </div>
 
                 </div>
-              
                
               
-                <div class="form-group groupflex">
-                    @error('address')
-                    <div class="text-danger">
-                        {{$message}}
-                    </div>     
-                    @enderror
+               
+                <div class="groupflex">
 
-                    <input name="address" type="textarea" id="" class="" placeholder="Enter your address" required>
-
+                    <div class="form-group ">
+                        @error('address')
+                        <span class="text-danger">
+                            {{$message}}
+                        </span>     
+                        @enderror
+    
+                        <input name="address" type="textarea" id="" class="" placeholder="Enter your address" required>
+                        
+                    </div>
 
                     <div class="form-group">
                         @error('age')
-                        <div class="text-danger">
+                        <span class="text-danger">
                             {{$message}}
-                        </div>      
+                        </span>      
                         @enderror
     
                         <input name="age" type="text" id="" class=""  placeholder="Enter your age" required>
                     </div>
-                  
+
 
                 </div>
+               
 
                
-               
-                <div class="form-group groupflex">
-                    @error('password')
-                    <div class="text-danger">
-                        {{$message}}
-                    </div>     
-                    @enderror
+               <div class="groupflex">
 
-                    <input name="password" type="password" id="" class=""  placeholder="Enter a password" required>
+                    <div class="form-group">
+                        @error('password')
+                        <span class="text-danger">
+                            {{$message}}
+                        </span>     
+                        @enderror
+
+                        <input name="password" type="password" id="" class=""  placeholder="Enter a password" required>
+
+                    </div>
 
                     <div class="form-group">
                         @error('password_confirmation')
-                        <div class="text-danger">
+                        <span class="text-danger">
                             {{$message}}
-                        </div>     
+                        </span>     
                         @enderror
     
                         <input name="password_confirmation" type="password" id="" class=""  placeholder="Confirm your password"  style="margin: " required>
                     </div>
 
-                </div>
-              
+               </div>
                 
+              
+                <div class="form-group">
+                    @error('sex')
+                    <span class="text-danger">
+                        {{$message}}
+                    </span>      
+                    @enderror
+                    <div class="form-group">
+                        <label for="sex" class="radio-label">
+                            <input type="radio" name="sex" value="male">
+                            <span class="radio-custom"></span>Male
+                       </label> 
+                       <label for="sex" class="radio-label">
+                            <input type="radio" name="sex" value="female">
+                            <span class="radio-custom"></span>Female
+                        </label>
+                    </div>
+                </div>
+            
                
                <div class="form-group">
                     <input type="submit" value="Register">

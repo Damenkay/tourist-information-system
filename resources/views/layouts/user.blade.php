@@ -12,7 +12,8 @@
         <title>{{config('app.name','TIMS')}}</title>
     </head>
     <body>
-        @include('inc.navbar')
+        @include('inc.usernavbar')
+        @include('inc.alert')
        @yield('content')
        @include('inc.footer')
 

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
   }
   /* navbar styling */
   nav{
@@ -21,18 +22,13 @@
     text-align: center;
     margin: 0 auto;
     width: 80%;
+    background-color: hsl(0, 80%, 57%);
   }
   .sidebar {
-    height: 100vh;
-    width: 55px;
-    background-color: rgb(9, 47, 116);
-    overflow: hidden;
-    transition: all 0.4s ease;
-    transition-delay: 0.1s;
-  }
-  
-  .sidebar.full{
-    width: 255px;
+    height: 70vh;
+    width: 10%;
+    background-color: hsl(192, 100%, 9%);
+
   }
   
   .sidebar_item {
@@ -40,41 +36,37 @@
     align-items: center;
     padding: 10px 0px;
     cursor: pointer;
-    margin:0px 0px 10px 0px;
+    margin:0px;
   }
   .sidebar_item:hover{
-    background-color: rgb(10, 29, 65);
+    background-color: #ffffff;
   }
   .sidebar_item p {
     font-weight: bold;
     font-size: 18px;
     color: white;
-    margin-left: 21px;
+  }
+
+  .sidebar_item p:hover{
+    color: hsl(192, 100%, 9%);
   }
   .sidebar_item i {
     font-size: 21px;
     color: white;
     margin-left: 15px;
   }
-  *{
+
+*{
     font-family: 'Poppins';
-}.dropdown {
-    position: relative;
-    display: inline-block;
 }
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 80px;
-    margin-top: 1px;
-}
-.dropdown-content a {
-    color: black;
-    padding: 6px 12px;
+
+
+.lcontent{
+    color: hsl(192, 100%, 9%);
     text-decoration: none;
-    display: block;
+}
+.lcontent:hover{
+    color: #ffffff;
 }
 .dropbtn{
     color: hsl(192, 100%, 9%);
@@ -83,12 +75,22 @@
     border-radius: 6px;
     border: none;
 }
-.dropdown-content a:hover{
-    background-color: #ddd;
+.dropbtn:hover{
+    color: white;
+    background-color: hsl(192, 100%, 9%);
 } 
-.dropdown:hover .dropdown-content{
-    display: block;
+.logoutbtn{
+    color: hsl(192, 100%, 9%);
+    background-color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: none;
 }
+.logoutbtn:hover{
+    color: white;
+    background-color: hsl(0, 82%, 51%);
+}
+
 
 /* hero styling */
 
@@ -130,13 +132,21 @@
     color: #ffff;
 }
 .center-glass button{
-    color: hsl(192, 100%, 9%);
     background-color: white;
     padding: 4px 10px;
     border-radius: 6px;
     border: none;
 }
-
+.center-glass a{
+    text-decoration: none;
+    color: hsl(192, 100%, 9%);
+}
+.center-glass a:hover{
+    color: #ffff;
+}
+.center-glass button:hover{
+    background-color: hsl(192, 100%, 9%);
+}
 /* second section */
 .inside{
     padding-top:20px;
@@ -399,17 +409,52 @@ h3{
     min-width: 12vw;
     display: block;
     padding: 15px 25px;
+   
+  }
+
+  #forLgn{
+    margin: 0 auto;
   }
 
   .form-group {
     display: block;
+    margin-top: 10px;
    
-
   }
+
+  .radio-label{
+    display: inline-block;
+    margin-left: 160px;
+    font-size: 20px;
+    
+  }
+
+  /* .radio-custom{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    border: 1px grey solid;
+    margin: 0 auto;
+    position: relative;
+    
+  } */
+
+  /* input[type="radio"]:checked + .radio-custom::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: hsl(192, 100%, 9%);
+    border-radius: 15px;
+  } */
   
    .groupflex{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
     
   }
@@ -433,4 +478,43 @@ h3{
 
   .redirectlink{
     font-size: smaller;
+   
+  }
+  .redirectlink a{
+    text-decoration: none;
+    color: hsl(192, 100%, 9%);
+  }
+
+
+  table {
+    font-family:'Poppins';
+    border-collapse: collapse;
+    width: 200%;
+    margin-left: -40%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.actionbtn{
+    color:white;
+    background-color: hsl(192, 100%, 9%);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  td a{
+    text-decoration: none;
+    color: white;
+  }
+  td a:hover{
+    text-decoration: none;
+    color:hsl(192, 100%, 9%);
+    background-color: white;
+    border: 1px solid hsl(192, 100%, 9%);
   }
