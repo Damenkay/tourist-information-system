@@ -18,7 +18,7 @@
             </div>
             <div class="sidebar_item">
                 <i class="fas fa-users"></i>
-                <p>Tour Tickets</p>
+                <p><a href="/bookings">Tour Booking</a></p>
             </div>
         </div>
     </div>

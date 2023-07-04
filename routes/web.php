@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ToursController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +28,10 @@ Route::get('/logout', 'PagesController@logout')->name('logout');
 
 // ADMIN ROUTES
 
+
+// TOURS ROUTES
+Route::resource('tours', 'ToursController');
+
+// BOOKINGS ROUTES
+Route::resource('bookings', 'BookingsController');
 

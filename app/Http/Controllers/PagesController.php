@@ -26,12 +26,12 @@ class PagesController extends Controller
 
     public function register(){
 
-        return view('pages.tourist.register');
+        return view('pages.tourist.auth.register');
     }
 
     public function login(){
 
-        return view('pages.tourist.login');
+        return view('pages.tourist.auth.login');
     }
 
     public function create(Request $request){
