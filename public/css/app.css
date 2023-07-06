@@ -163,14 +163,14 @@
     margin-left: -15%;
     padding-bottom: 15px;
     list-style:square;
-    font-size: 35px;
+    font-size: 25px;
     
 }
 .actionplan{
    height: auto;
    width: 50%;
    margin: 10px; 
-    text-align:center; 
+  text-align:left; 
     padding-top:30px;
     height: min-content;
     padding: 5%;
@@ -179,6 +179,10 @@
     background-color: rgba(196, 209, 233, 0.75);
     border-radius: 12px;
     color:hsl(192, 100%, 9%) ; 
+    box-shadow: 
+    rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 
 }
@@ -411,6 +415,14 @@ h3{
     padding: 15px 25px;
    
   }
+  select{
+    border-radius: 15px;
+    border: 1px gray solid;
+    min-width: 10vw;
+    display: block;
+    padding: 10px 15px;
+
+  }
 
   #forLgn{
     margin: 0 auto;
@@ -480,17 +492,36 @@ h3{
     font-size: smaller;
    
   }
+  #dbtn{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  #dbtn:hover{
+    color:hsl(192, 100%, 9%) ;
+  }
   .redirectlink a{
     text-decoration: none;
     color: hsl(192, 100%, 9%);
   }
 
-
+.userbooking{
+  height: 112vh;
+  width: 80vw;
+  margin:0px auto;
+  box-shadow: 
+  rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 200px;
+  padding: 0 auto;
+}
   table {
     font-family:'Poppins';
     border-collapse: collapse;
-    width: 200%;
-    margin-left: -40%;
+    width: 80%;
+    margin: 0 auto;
   }
   
   td, th {
@@ -518,3 +549,46 @@ h3{
     background-color: white;
     border: 1px solid hsl(192, 100%, 9%);
   }
+
+.dashhero{
+  padding: 10px;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+}
+.dashflex{
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+}
+.bookingcard, .newbookingcard {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(197, 209, 231, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(26, 4, 4, 0.096);
+  height: 200px;
+  width: 200px;
+  margin: 3%;
+  padding: 5%;
+  text-transform: uppercase;
+  box-shadow: 
+  rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px;
+}
+
+#htxt{
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(192, 100%, 9%);
+  margin: 20px;
+
+}
+
+.bookingcard h4, .newbookingcard h4{
+  margin-top: 50px;
+}

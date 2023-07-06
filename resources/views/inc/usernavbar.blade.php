@@ -9,7 +9,7 @@ style="background-color: hsl(192, 100%, 9%);">
 <div class="collapse navbar-collapse d-flex" id="navbarNavAltMarkup">
 
 <div class="nav-item mx-auto">
-<a class="navbar-brand mx-5" href="/dashboard"><h1>{{Auth::user()->firstname}}'s Dashboard</h1></a>
+<a class="navbar-brand mx-5" href="/dashboard"><h1>TOURISM INFORMATION SYSTEM</h1></a>
 </div>
 
 <div class=" d-flex p-2">

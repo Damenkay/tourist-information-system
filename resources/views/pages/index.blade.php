@@ -5,7 +5,7 @@
         <div class="center-glass">
             <h1>{{$title}}</h1>
             <p>
-                experience the eastern heartland
+                experience The Home of Peace and Tourism
             </p>
             <button>
                <a href="/login">Book a Tour</a> 
@@ -37,14 +37,16 @@
     </div>
 
     <div class="section4">
-        <h1 style="padding-top: 50px; text-align:center">Services</h1>
+        <h1 style="padding-top: 50px; text-align:center">Visit Exciting Destnations</h1>
         <div class="inside">
-            <img src="{{asset('img/IMG_2026.JPG')}}" alt="img"> 
+            <img src="{{asset('img/IMG_2025.JPG')}}" alt="img"> 
             <div class="actionplan">
                 <ul>
-                <li>Hotel Reservatons</li>
-                <li>Transit Tickets</li>
-                <li>Tour Guides</li>
+                <li>Shere HIlls</li>
+                <li>Wase Rocks</li>
+                <li>Jos Wild life Park</li>
+                <li>Kura Falls</li>
+                <li>And lots more...</li>
                 </ul>
             </div>
         

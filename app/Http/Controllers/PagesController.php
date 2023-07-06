@@ -10,7 +10,7 @@ use App\Models\{tourist};
 class PagesController extends Controller
 {
     public function index(){
-        $title = 'Tour Imo!'  ;  
+        $title = 'Tour Plateau!'  ;  
         return view('pages.index')-> with('title',$title);
     }
 
@@ -20,8 +20,8 @@ class PagesController extends Controller
     }
 
     public function services(){
-            $users = tourist::all();
-        return view('pages.services')->with('users',$users);
+           
+        return view('pages.services');
     }
 
     public function register(){
@@ -79,8 +79,7 @@ class PagesController extends Controller
     }
 
     public function dashboard(){
-
-
+        
 
         return view('pages.tourist.dashboard');
     } 

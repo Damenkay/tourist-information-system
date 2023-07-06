@@ -34,4 +34,6 @@ Route::resource('tours', 'ToursController');
 
 // BOOKINGS ROUTES
 Route::resource('bookings', 'BookingsController');
+Route::post('update/{id}', 'BookingsController@update')->name('update');
+Route::get('delete/{id}', 'BookingsController@destroy')->name('delete');
 

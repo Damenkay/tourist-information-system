@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use Illuminate\Http\Request;
 
 class BookingsController extends Controller
@@ -12,7 +13,9 @@ class BookingsController extends Controller
     public function index()
     {
         //
-        return view('pages.tourist.booking');
+        $bookings = Booking::orderBY('created_at','desc')->paginate(5);
+        return view('pages.tourist.booking')->with('bookings', $bookings);
+        // return view('pages.tourist.booking')->with('bookings',$bookings);
     }
 
     /**
@@ -21,6 +24,9 @@ class BookingsController extends Controller
     public function create()
     {
         //
+       
+        return view('pages.tourist.bcreate');
+        
     }
 
     /**
@@ -28,7 +34,22 @@ class BookingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
+        $form_data = $request->validate([
+            'username' => 'required',
+            'city' => 'required',
+            'destination' => 'required',
+            'arrival_time' => 'required',
+        ]);
+
+        $booking = new Booking();
+        $booking -> username = $request->username;
+        $booking -> city = $request->city;
+        $booking -> destination = $request->destination;
+        $booking -> arrival_time = $request->arrival_time;
+        $booking -> save();
+        return redirect('/bookings')->with('success', 'Booking created');
+
     }
 
     /**
@@ -42,24 +63,38 @@ class BookingsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $booking = Booking::findOrfail($id);
+        return view('pages.tourist.bedit')->with('booking',$booking);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request,$id)
     {
-        //
+        // $booking = Booking::find($id);
+        // $booking->update([ 
+        // $booking -> username = $request->username,
+        // $booking -> city = $request->city,
+        // $booking -> destination = $request->destination,
+        // $booking -> arrival_time = $request->arrival_time,]);
+        // $input = $request->all();
+
+        // $booking->update($input);
+        // return view('pages.tourist.booking');
+        // redirect()->route('/bookings')
+        //                 ->with('success','Booking updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $booking = Booking::destroy($id);
+      
+        return redirect()->back();
     }
 }
