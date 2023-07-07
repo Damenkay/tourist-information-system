@@ -15,7 +15,7 @@ class Booking extends Model
         'destination',
         'arrival_time'
     ];
-    public function bookings(){
-        return $this->hasMany(Booking::class);
+    public function tourist(){
+        return $this->belongsTo('App\Models\tourist');
     }
 }

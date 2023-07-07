@@ -23,7 +23,7 @@ Route::get('/register', 'PagesController@register');
 Route::POST('/create', 'PagesController@create')->name('create');
 Route::get('/login', 'PagesController@login')->name('login');
 Route::POST('/check', 'PagesController@check')->name('check');
-Route::get('/tourist/dashboard', 'PagesController@dashboard')->name('dashboard');
+Route::get('/tourist/dashboard', 'PagesController@dashboard')->name('dashboard')->middleware('touristAuth');
 Route::get('/logout', 'PagesController@logout')->name('logout');
 
 // ADMIN ROUTES
@@ -33,7 +33,7 @@ Route::get('/logout', 'PagesController@logout')->name('logout');
 Route::resource('tours', 'ToursController');
 
 // BOOKINGS ROUTES
-Route::resource('bookings', 'BookingsController');
-Route::post('update/{id}', 'BookingsController@update')->name('update');
-Route::get('delete/{id}', 'BookingsController@destroy')->name('delete');
+Route::resource('bookings', 'BookingsController')->middleware('bookingAuth');;
+Route::post('update/{id}', 'BookingsController@update')->name('update')->middleware('bookingAuth');
+Route::get('delete/{id}', 'BookingsController@destroy')->name('delete')->middleware('bookingAuth');;
 

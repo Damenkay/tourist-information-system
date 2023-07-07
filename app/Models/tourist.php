@@ -20,4 +20,8 @@ class tourist extends Model
         'address' ,
         'password'
     ];
+
+    public function bookings(){
+        return $this->hasMany(Booking::class);
+    }
 }

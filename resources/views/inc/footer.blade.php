@@ -2,9 +2,9 @@
     <div class="footer">
         <div class="line1"> 
             <img src={{asset('img/icon-location.svg')}} alt="location">
-            <span>Owerri, Imo State Nigeria</span> <br> <br>
+            <span>Jos, Plateau State Nigeria</span> <br> <br>
             <img src={{asset('img/icon-phone.svg')}} alt="phone"><a  href="tel:+234-811-234-5678">+234-811-234-5678</a><br> <br>
-            <img src={{asset('img/icon-email.svg')}} alt="email"><a  href="mailto:info@skillsforwealth.org">info@tif.org</a><br>
+            <img src={{asset('img/icon-email.svg')}} alt="email"><a  href="mailto:info@tif.org">info@tif.org</a><br>
         </div>
 
         <div class="line2"  style="line-height: 2.5;">

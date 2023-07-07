@@ -63,6 +63,11 @@
                 <option name="destination" value="Assop Falls">Assop Falls</option>
                 <option name="destination" value="Kura Falls">Kura Falls</option>
                 <option name="destination" value="Jos Zoological Garden">Jos Zoological Garden</option>
+                <option name="destination" value="Solomon Lar Amusement Park">Solomon Lar Amusement Park</option>
+                <option name="destination" value="Kerang Volcanic Mountain">Kerang Volcanic Mountain</option>
+                <option name="destination" value="Pandam Game Reserve">Pandam Game Reserve</option>
+                <option name="destination" value="Kahwang Rock Formation">Kahwang Rock Formation</option>
+                <option name="destination" value="Jos Museum">Jos Museum</option>
               </select>
           </div> 
 

@@ -1,7 +1,33 @@
 @extends('layouts.app')
 @section('content')
+
     <div class="hero" >
-        <img src={{asset('img/IMG_2021.JPG')}} alt="hero background image">
+        <div class="caro">
+            <div class="car">
+                <div class="car-it hero">
+                    <img src={{asset('img/caro1.jpeg')}} alt="hero background image">
+                </div>
+                <div class="car-it hero">
+                    <img src={{asset('img/caro2.jpeg')}} alt="hero background image">
+                </div>
+                <div class="car-it hero">
+                    <img src={{asset('img/caro3.jpeg')}} alt="hero background image">
+                </div> 
+                <div class="car-it hero">
+                    <img src={{asset('img/caro4.jpeg')}} alt="hero background image">
+                </div>
+                <div class="car-it hero">
+                    <img src={{asset('img/caro5.jpeg')}} alt="hero background image">
+                </div>
+                <div class="car-it hero">
+                    <img src={{asset('img/caro6.jpeg')}} alt="hero background image">
+                </div>
+                <div class="car-it hero">
+                    <img src={{asset('img/caro7.jpeg')}} alt="hero background image">
+                </div>
+        
+            </div>
+        </div>
         <div class="center-glass">
             <h1>{{$title}}</h1>
             <p>

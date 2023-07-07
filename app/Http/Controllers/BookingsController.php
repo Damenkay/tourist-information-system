@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Models\tourist;
 use Illuminate\Http\Request;
 
 class BookingsController extends Controller
@@ -13,9 +14,10 @@ class BookingsController extends Controller
     public function index()
     {
         //
-        $bookings = Booking::orderBY('created_at','desc')->paginate(5);
-        return view('pages.tourist.booking')->with('bookings', $bookings);
-        // return view('pages.tourist.booking')->with('bookings',$bookings);
+        // $bookings = Booking::orderBY('created_at','desc')->paginate(5);
+        $user_id= auth()->user()->id;
+        $user = tourist::find($user_id);
+        return view('pages.tourist.booking')->with('bookings',$user->bookings);
     }
 
     /**
@@ -47,6 +49,7 @@ class BookingsController extends Controller
         $booking -> city = $request->city;
         $booking -> destination = $request->destination;
         $booking -> arrival_time = $request->arrival_time;
+        $booking -> tourist_id = auth()->user()->id;
         $booking -> save();
         return redirect('/bookings')->with('success', 'Booking created');
 
