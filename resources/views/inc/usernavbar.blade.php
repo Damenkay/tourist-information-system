@@ -9,18 +9,20 @@ style="background-color: hsl(192, 100%, 9%);">
 <div class="collapse navbar-collapse d-flex" id="navbarNavAltMarkup">
 
 <div class="nav-item mx-auto">
+
 </div>
 
 <div class=" d-flex p-2">
-<ul class="navbar-nav" style="padding-right: 80px">
+    <ul class="navbar-nav" style="padding-right: 80px">
+       
+        <div class="dropdown">
+            <button class="dropbtn"><a class="lcontent" href="{{Route('dashboard')}}">Dashboard</a></button>
+        </div>
 
-<div class="logoutbtn">
-    <a href="{{Route('logout')}}"><button onclick="return confirm('{{Auth::user()->firstname}}, are you sure you want to logout?')" class="logoutbtn">Logout</button></a>
-{{-- <div class="dropdown-content">
-<a href="{{Route('student.logout')}}">Logout</a>
-</div> --}}
-</div>
-</ul>
+        <div class="logoutbtn">
+            <a href="{{Route('logout')}}"><button onclick="return confirm('{{Auth::user()->firstname}}, are you sure you want to logout?')" class="logoutbtn">Logout</button></a>
+        </div>
+    </ul>
 </div>
 
 </div>

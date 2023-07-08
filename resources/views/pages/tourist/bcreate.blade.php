@@ -58,11 +58,10 @@
               <select name="destination" id="forLgn">
                 <option value="">-Select Destination-</option>
                 <option name="destination" value="Shere Hills">Shere Hills</option>
-                <option name="destination" value="Wase Rock">Wase Rock</option>
                 <option name="destination" value="Jos Wild Life Park">Jos Wild Life Park</option>
                 <option name="destination" value="Assop Falls">Assop Falls</option>
                 <option name="destination" value="Kura Falls">Kura Falls</option>
-                <option name="destination" value="Jos Zoological Garden">Jos Zoological Garden</option>
+                <option name="destination" value="Riyom Rocks">Riyom Rocks</option>
                 <option name="destination" value="Solomon Lar Amusement Park">Solomon Lar Amusement Park</option>
                 <option name="destination" value="Kerang Volcanic Mountain">Kerang Volcanic Mountain</option>
                 <option name="destination" value="Pandam Game Reserve">Pandam Game Reserve</option>

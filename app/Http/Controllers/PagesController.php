@@ -19,11 +19,6 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
-    public function services(){
-           
-        return view('pages.services');
-    }
-
     public function register(){
 
         return view('pages.tourist.auth.register');

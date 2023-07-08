@@ -34,7 +34,7 @@
                 experience The Home of Peace and Tourism
             </p>
             <button>
-               <a href="/login">Book a Tour</a> 
+               <a href="{{Route('dashboard')}}">Book a Tour</a>     
             </button>
         </div>
     </div>

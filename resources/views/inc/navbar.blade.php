@@ -14,11 +14,12 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link" href="/tours">Tours</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="/services">Services</a>
+                        <a class="nav-link" href="/about">About Us</a>
                     </li>
+                   
                 </ul>
 
             </div>

@@ -36,6 +36,6 @@
     @endif 
    
   </table>
-  <a href="/tourist/dashboard" class="actionbtn" id="actionbtn" style="text-decoration: none">Back</a>
+  <a href="/tourist/dashboard"id="backbtn">Back</a>
 </div>
 @endsection

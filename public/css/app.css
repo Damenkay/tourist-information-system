@@ -74,17 +74,20 @@
     padding: 4px 10px;
     border-radius: 6px;
     border: none;
+    padding: 8px;
+    margin: 10px;
 }
 .dropbtn:hover{
     color: white;
     background-color: hsl(192, 100%, 9%);
+    border: 1px solid #ffffff;
 } 
 .logoutbtn{
     color: hsl(192, 100%, 9%);
     background-color: white;
-    padding: 4px 10px;
     border-radius: 6px;
     border: none;
+    margin: 10px;
 }
 .logoutbtn:hover{
     color: white;
@@ -147,6 +150,7 @@
 }
 .center-glass button:hover{
     background-color: hsl(192, 100%, 9%);
+    border: 1px solid #ffffff;
 }
 /* second section */
 .inside{
@@ -540,6 +544,21 @@ h3{
     padding: 5px 10px;
     border-radius: 5px;
   }
+  #backbtn{
+    color:white;
+    background-color: hsl(192, 100%, 9%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  #backbtn:hover{
+    text-decoration: none;
+    color:hsl(192, 100%, 9%);
+    background-color: white;
+    border: 1px solid hsl(192, 100%, 9%);
+  }
   td a{
     text-decoration: none;
     color: white;
@@ -647,4 +666,63 @@ h3{
   0% {
     transform: translateX(0);
   }
+}
+
+.about-glass{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  height: min-content;
+  margin: 3%;
+  padding: 5%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  backdrop-filter: blur(3px) saturate(100%);
+  -webkit-backdrop-filter: blur(3px) saturate(100%);
+  
+}
+.about-card{
+  box-shadow: 
+    rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, 
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
+  ;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 4, 4, 0.096);
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.about-card p{
+  font-size: 20px;
+  color: #ffffff;
+}
+.about-card h4{
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.destination{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 20px;
+}
+.destinaton-img img{
+  height: 667px;
+  width: 1000px;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}.destinaton-img {
+  height: 667px;
+  width: 1000px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 6px solid rgba(26, 4, 4, 0.096);
+}
+.destination-info{
+  border-radius: 12px;
+  border: 1px solid rgba(26, 4, 4, 0.096);
+  margin: 15px;
 }
