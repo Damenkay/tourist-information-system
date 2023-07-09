@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tour;
 use Illuminate\Http\Request;
 
 class ToursController extends Controller
@@ -12,7 +13,7 @@ class ToursController extends Controller
     public function index()
     {
         
-        return view('pages.tours');
+
     }
 
     /**
@@ -20,7 +21,7 @@ class ToursController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.Admin.createTour');
     }
 
     /**
@@ -28,15 +29,26 @@ class ToursController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_data = $request ->validate([
+                'destination_name' => 'required',
+                'location' => 'required',
+                'address' => 'required'
+        ]);
+
+        $tour = new Tour();
+        $tour -> destination_name = $request -> destination_name;
+        $tour -> location = $request -> destination_name;
+        $tour -> address = $request -> address;
+        $tour-> save();
+        return back()->with('success', 'Tour Added successfully');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        return Tour::find($id);
     }
 
     /**

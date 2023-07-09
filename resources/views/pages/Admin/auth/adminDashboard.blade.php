@@ -9,16 +9,42 @@
                 <a href="{{Route('allTourists')}}">All Users</a>
             </div>
             <div class="sidebar-item">
-                <a href="{{Route('allTourists')}}">Create Tours</a>
+                <a href="{{Route('tours.create')}}">Create Tours</a>
             </div>
            
         </div>
-        <div class="bdy-content">
-               <div class="table-ontainer">
-
-
-
-               </div>
+        <div class="table-container">
+               <div class="table-wrapper">
+                    <h1 style="margin-left:40%">All Tours</h1>
+                    <table>
+                       
+                     @if (count($tours)>0)
+                      <tr>
+                        <th>Destination Name</th>
+                        <th>Location</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                        </tr>
+                         
+                       
+                        @foreach( $tours as $tour )
+                          <tr>
+                              <td>{{$tour->destination_name}}</td> 
+                              <td>{{$tour->location}}</td> 
+                              <td>{{$tour->address}}</td>
+                          
+                              <td>
+                                  {{-- <a href="{{ route('bookings.edit',$booking->id)}}" class="actionbtn">Edit</a> --}}
+                                  <a href="/tours/{{$tour->id}}" class="actionbtn" id="actionbtn">view</a>
+                              </td>
+                        </tr>
+                        @endforeach
+                        
+                      @else
+                        <h4 style="margin-left:39%">No Records Found</h4>
+                      @endif 
+                      {{ $tours->links() }}
+                    </table>
         </div>
     </div>
 

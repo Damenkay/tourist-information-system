@@ -34,7 +34,7 @@
     @else
       <h4 style="margin-left:39%">No Records Found</h4>
     @endif 
-   
+    {{ $bookings->links() }}
   </table>
   <a href="{{Route('admins.dashboard')}}"id="backbtn">Back</a>
 </div>

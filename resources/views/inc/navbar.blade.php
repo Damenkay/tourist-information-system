@@ -14,7 +14,7 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item me-5">
-                        <a class="nav-link" href="/tours">Tours</a>
+                        <a class="nav-link" href="/homeTours">Tours</a>
                     </li>
                     <li class="nav-item me-5">
                         <a class="nav-link" href="/about">About Us</a>

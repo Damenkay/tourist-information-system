@@ -2,10 +2,10 @@
 @section('content')
 <div class="container1-1"> 
 
-  <h2>Book a Tour</h2> 
+  <h2>Create New Tour</h2> 
 
   <div class="container1-2">
-    <form action="" method="POST"  class="contactform" enctype="multipart/form-data">
+    <form action="{{Route('tours.store')}}" method="POST"  class="contactform" enctype="multipart/form-data">
           @csrf
           <div class="results">
             @if (Session::get('success'))

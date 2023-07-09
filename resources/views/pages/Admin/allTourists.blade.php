@@ -44,6 +44,8 @@
     @endif 
    
   </table>
+  {{ $tourists->links() }}
   <a href="/dashboard"id="backbtn">Back</a>
 </div>
+
 @endsection

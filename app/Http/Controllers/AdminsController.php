@@ -9,6 +9,8 @@ use App\Models\tourist;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class AdminsController extends Controller
 {
@@ -17,8 +19,8 @@ class AdminsController extends Controller
      */
     public function index()
     {
-        $tours = Tour::orderBY('created_at','desc')->paginate(5);
-        return view('pages.Admin.auth.adminDashboard');
+        $tours = Tour::orderBY('created_at','desc')->simplePaginate(5);
+        return view('pages.Admin.auth.adminDashboard')->with('tours', $tours);
     }
 
     /**

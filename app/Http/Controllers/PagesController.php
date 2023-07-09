@@ -19,6 +19,11 @@ class PagesController extends Controller
         return view('pages.about');
     }
 
+    public function homeTours(){
+
+        return view('pages.homeTours');
+    }
+
     public function register(){
 
         return view('pages.tourist.auth.register');
