@@ -24,7 +24,7 @@
             </p>
           </div>
           <div class="destination-img">
-            <img src="{{asset('img/wild-life.jpeg')}}" alt="Jos wild life park" height="350px" width="500px">
+            <img src="{{asset('img/wild-life-park.png')}}" alt="Jos wild life park" height="350px" width="500px">
           </div>
         </div>
         <div class="destination">
@@ -48,7 +48,7 @@
             </p>
           </div>
           <div class="destination-img">
-            <img src="" alt="Kura Falls" height="350px" width="500px">
+            <img src="{{asset('img/kura-falls.png')}}" alt="Kura Falls" height="350px" width="500px">
           </div>
         </div>
 
@@ -74,13 +74,13 @@
             </p>
           </div>
           <div class="destination-img">
-            <img src="" alt="Solomon Lar Amusement Park" height="350px" width="500px">
+            <img src="{{asset('img/solomon-lar.jpeg')}}" alt="Solomon Lar Amusement Park" height="350px" width="500px">
           </div>
         </div>
 
         <div class="destination">
           <div class="destination-img">
-            <img src="" alt="Kerang Volcanic Mountain" height="350px" width="500px">
+            <img src="{{asset('img/kerang.png')}}" alt="Kerang Volcanic Mountain" height="350px" width="500px">
           </div>
           <div class="destination-info">
             <h3>Kerang Volcanic Mountain</h3>
@@ -104,7 +104,7 @@
         </div>
         <div class="destination">
           <div class="destination-img">
-            <img src="" alt="Khawang Rock Formation" height="350px" width="500px">
+            <img src="{{asset('img/khawang.jpeg')}}" alt="Khawang Rock Formation" height="350px" width="500px">
           </div>
           <div class="destination-info">
             <h3>Khawang Rock Formation</h3>
@@ -123,7 +123,7 @@
             </p>
           </div>
           <div class="destination-img">
-            <img src="{{asset('img/jos-museum.jpg')}}" alt="Jos Museum" height="350px" width="500px">
+            <img src="{{asset('img/national-museum.png')}}" alt="Jos Museum" height="350px" width="500px">
           </div>
         </div>
      </div>

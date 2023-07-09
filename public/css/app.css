@@ -24,38 +24,53 @@
     width: 80%;
     background-color: hsl(0, 80%, 57%);
   }
-  .sidebar {
-    height: 70vh;
-    width: 10%;
-    background-color: hsl(192, 100%, 9%);
-
+  .container{
+   position: absolute;
+   display: flex;
+   
   }
+
+  .sidebar{
+    width: 200px;
+    height: 90vh;
+    position: sticky;
+    position: -webkit-sticky;
+    background: hsl(192, 79%, 9%);
+    margin-right: 0;
+  }
+
+  .bdy-content{
+  flex: 3;
+  padding: 20px;
+
+}
+
   
-  .sidebar_item {
+  .sidebar-item {
     display: flex;
     align-items: center;
     padding: 10px 0px;
     cursor: pointer;
-    margin:0px;
+    margin:0 auto;
+    margin-top: 70px;
+    height: 90px;
+    width: 150px;
+   
   }
-  .sidebar_item:hover{
-    background-color: #ffffff;
+  .sidebar-item a{
+    text-decoration: none;
+    text-decoration-color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 17px;
+    color: #ffffff;
   }
-  .sidebar_item p {
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+  .sidebar-item:hover{
+    border: 1px solid #ffffff;
+    
   }
-
-  .sidebar_item p:hover{
-    color: hsl(192, 100%, 9%);
+  .sidebar-item a:hover{
+    color: #ffffff;
   }
-  .sidebar_item i {
-    font-size: 21px;
-    color: white;
-    margin-left: 15px;
-  }
-
 *{
     font-family: 'Poppins';
 }
@@ -436,7 +451,14 @@ h3{
   .form-group {
     display: block;
     margin-top: 10px;
-   
+  }
+  .results{
+    display: block;
+    margin-left: 35%;
+  }
+  .form-group span{
+    color: red;
+    margin-left: 35%;
   }
 
   .radio-label{

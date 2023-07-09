@@ -15,7 +15,5 @@ class Tour extends Model
         'address',
        
     ];
-    public function bookings(){
-        return $this->belongsTo(Tour::class);
-    }
+   
 }

@@ -26,6 +26,13 @@ Route::get('/tourist/dashboard', 'PagesController@dashboard')->name('dashboard')
 Route::get('/logout', 'PagesController@logout')->name('logout');
 
 // ADMIN ROUTES
+Route::get('/dashboard', 'AdminsController@index')->name('admins.dashboard');
+Route::get('/admins/login', 'AdminsController@login')->name('admins.login');
+Route::get('/admins/create', 'AdminsController@create')->name('admins.register');
+Route::POST('/admins/store', 'AdminsController@store')->name('admins.store');
+Route::POST('/admins/check', 'AdminsController@check')->name('admins.check');
+Route::get('/allBookings', 'AdminsController@showAllBookings')->name('allBookings');
+Route::get('/allTourists', 'AdminsController@showAllTourists')->name('allTourists');
 
 
 // TOURS ROUTES

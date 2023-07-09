@@ -10,12 +10,14 @@ class Booking extends Model
     use HasFactory;
     protected $table = 'bookings';
     protected $fillable = [
-        'username',
-        'city',
-        'destination',
-        'arrival_time'
+    'username',
+    'city',
+    'destination',
+    'arrival_time'
     ];
+
+    
     public function tourist(){
-        return $this->belongsTo('App\Models\tourist');
+    return $this->belongsTo('App\Models\tourist');
     }
 }

@@ -13,7 +13,6 @@ class tourist extends Model
         'username',
         'firstname',
         'lastname',
-        'username',
         'email',
         'age',
         'sex',

@@ -11,7 +11,7 @@ class ToursController extends Controller
      */
     public function index()
     {
-        //
+        
         return view('pages.tours');
     }
 
