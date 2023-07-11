@@ -20,4 +20,6 @@ class Booking extends Model
     public function tourist(){
     return $this->belongsTo('App\Models\tourist');
     }
+
+   
 }

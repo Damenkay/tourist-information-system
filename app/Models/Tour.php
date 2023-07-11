@@ -15,5 +15,9 @@ class Tour extends Model
         'address',
        
     ];
+
+    public function bookings(){
+        return $this->hasMany(Booking::class);
+    }
    
 }

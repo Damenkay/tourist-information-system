@@ -38,12 +38,14 @@
                                   <a href="/tours/{{$tour->id}}" class="actionbtn" id="actionbtn">view</a>
                               </td>
                         </tr>
+                       
                         @endforeach
+                        <tr> {!!$tours->links() !!}</tr>
                         
                       @else
                         <h4 style="margin-left:39%">No Records Found</h4>
                       @endif 
-                      {{ $tours->links() }}
+                     
                     </table>
         </div>
     </div>

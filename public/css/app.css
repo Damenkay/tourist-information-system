@@ -748,6 +748,9 @@ h3{
   border: 1px solid rgba(26, 4, 4, 0.096);
   margin: 15px;
 }
+.destination-info p{
+  font-size: larger;
+}
 
 .table-container{
   height: 80vh;

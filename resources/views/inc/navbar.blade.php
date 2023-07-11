@@ -23,19 +23,36 @@
                 </ul>
 
             </div>
+            @if (auth()->user())
+                
+                    <div class=" d-flex p-2">
+                        <ul class="navbar-nav" style="padding-right: 80px">
+                        
+                            <div class="dropdown">
+                                <button class="dropbtn"><a class="lcontent" href="{{Route('dashboard')}}">Dashboard</a></button>
+                            </div>
+                    
+                            <div class="logoutbtn">
+                                <a href="{{Route('logout')}}"><button onclick="return confirm('{{Auth::user()->firstname}}, are you sure you want to logout?')" class="logoutbtn">Logout</button></a>
+                            </div>
+                        </ul>
+                    </div>
+            @else
+                    <div class=" d-flex p-2">
+                        <ul class="navbar-nav" style="padding-right: 80px">
 
-            <div class=" d-flex p-2">
-                <ul class="navbar-nav" style="padding-right: 80px">
+                        <div class="dropdown">
+                            <button class="dropbtn" style="margin-right: 40px;"><a class="lcontent" href="/register">Register</a></button>
+                        </div>
 
-                <div class="dropdown">
-                    <button class="dropbtn" style="margin-right: 40px;"><a class="lcontent" href="/register">Register</a></button>
-                </div>
-
-                <div class="dropdown">
-                    <button class="dropbtn"><a class="lcontent" href="/login">Login</a></button>
-                </div>
-                </ul>
-            </div>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a class="lcontent" href="/login">Login</a></button>
+                        </div>
+                        </ul>
+                    </div>
+                
+            @endif
+           
         </div>
     </div>
 </nav>

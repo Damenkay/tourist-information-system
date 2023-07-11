@@ -14,8 +14,6 @@
       <th>Age</th>
       <th>Sex</th>
       <th>Address</th>
-      <th>Created time</th>
-      <th>Action</th>
       </tr>
        
      
@@ -27,8 +25,7 @@
             <td>{{$tourist->email}}</td>
             <td>{{$tourist->age}}</td>
             <td>{{$tourist->sex}}</td>
-            <td>{{$tourist->Address}}</td>
-            <td>{{$tourist->created_at}}</td>
+            <td>{{$tourist->address}}</td>
         
             <td>
                 {{-- <a href="{{ route('bookings.edit',$booking->id)}}" class="actionbtn">Edit</a> --}}
