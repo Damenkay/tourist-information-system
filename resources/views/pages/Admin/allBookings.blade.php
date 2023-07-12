@@ -27,14 +27,14 @@
                 <a href="{{ route('delete',$booking->id)}}" class="actionbtn" id="actionbtn">Delete</a>
             </td>
       </tr>
-      <tr> {{ $bookings->links() }}</tr>
-
+     
       
 
       @endforeach
     @else
       <h4 style="margin-left:39%">No Records Found</h4>
     @endif 
+    <tr> {{ $bookings->links() }}</tr>
   </table>
   <a href="{{Route('admins.dashboard')}}"id="backbtn">Back</a>
 </div>

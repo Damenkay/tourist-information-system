@@ -2,10 +2,11 @@
 @section('content')
 
 <div class="userbooking">
-  <h1 style="margin-left:40%">Bookings</h1>
+  
   <table>
      
    @if (count($bookings)>0)
+   <h1 style="text-align:center">Bookings</h1>
     <tr>
       <th>Username</th>
       <th>City</th>
@@ -32,7 +33,7 @@
 
       @endforeach
     @else
-      <h4 style="margin-left:39%">No Records Found</h4>
+      <h4 style="text-align:center">No Records Found</h4>
     @endif 
    
   </table>

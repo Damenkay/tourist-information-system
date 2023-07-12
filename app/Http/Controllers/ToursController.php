@@ -49,6 +49,7 @@ class ToursController extends Controller
     public function show($id)
     {
         $tour = Tour::find($id);
+       
         return view('pages.Admin.auth.view-tour')->with('tour',$tour);
     }
 
