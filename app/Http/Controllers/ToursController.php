@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use App\Models\Tour;
 use Illuminate\Http\Request;
 
@@ -36,8 +37,8 @@ class ToursController extends Controller
         ]);
 
         $tour = new Tour();
-        $tour -> destination_name = $request -> destination_name;
-        $tour -> location = $request -> destination_name;
+        $tour -> destination = $request -> destination_name;
+        $tour -> location = $request -> location;
         $tour -> address = $request -> address;
         $tour-> save();
         return back()->with('success', 'Tour Added successfully');
@@ -52,6 +53,11 @@ class ToursController extends Controller
        
         return view('pages.Admin.auth.view-tour')->with('tour',$tour);
     }
+
+    // public function showTourBookings($id){
+    //     $bookings = Booking::where('id',$id)->orderBy('created_at', 'desc')->paginate(5);
+    //     return view('pages.Admin.auth.view-tour')->with('bookings',$bookings);
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -72,8 +78,10 @@ class ToursController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $tour = Tour::destroy($id);
+      
+        return redirect()->back();
     }
 }

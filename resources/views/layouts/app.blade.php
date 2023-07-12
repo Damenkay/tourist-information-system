@@ -13,6 +13,7 @@
     </head>
     <body>
         @include('inc.navbar')
+        @include('inc.alert')
        @yield('content')
        @include('inc.footer')
 

@@ -38,9 +38,11 @@ Route::get('/allTourists', 'AdminsController@showAllTourists')->name('allTourist
 
 // TOURS ROUTES
 Route::resource('tours', 'ToursController');
+Route::get('destroy/{id}', 'ToursController@destroy')->name('tour.delete');
+
 
 // BOOKINGS ROUTES
-Route::resource('bookings', 'BookingsController')->middleware('bookingAuth');;
+Route::resource('bookings', 'BookingsController')->middleware('bookingAuth');
 Route::post('update/{id}', 'BookingsController@update')->name('update')->middleware('bookingAuth');
 Route::get('delete/{id}', 'BookingsController@destroy')->name('delete')->middleware('bookingAuth');;
 

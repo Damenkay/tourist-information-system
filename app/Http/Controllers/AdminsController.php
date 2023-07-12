@@ -83,6 +83,8 @@ class AdminsController extends Controller
         $tourists = tourist::orderBY('created_at','desc')->paginate(5);
         return view('pages.Admin.allTourists')->with('tourists',$tourists);
     }
+    
+    
 
     /**
      * Display the specified resource.

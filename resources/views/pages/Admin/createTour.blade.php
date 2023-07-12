@@ -7,7 +7,7 @@
   <div class="container1-2">
     <form action="{{Route('tours.store')}}" method="POST"  class="contactform" enctype="multipart/form-data">
           @csrf
-          <div class="results">
+          {{-- <div class="results">
             @if (Session::get('success'))
                 <span class="alert alert-success">
                     {{Session::get('success')}}
@@ -19,7 +19,7 @@
                     {{Session::get('error')}}
                 </span>
             @endif
-          </div>
+          </div> --}}
 
           <div class="form-group">
             @error('destination_name')

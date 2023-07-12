@@ -46,6 +46,9 @@
             <div class="redirectlink">
               <p class=""><a href="/register" class=""><u> Register here</u></a></p> 
             </div>
+            <div class="redirectlink">
+              <p class=""><a href="/admins/login" class=""><u>Admin Login</u></a></p> 
+            </div>
              
       </form>
     </div>

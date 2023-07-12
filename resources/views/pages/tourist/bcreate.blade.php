@@ -68,6 +68,19 @@
                 <option name="destination" value="Kahwang Rock Formation">Kahwang Rock Formation</option>
                 <option name="destination" value="Jos Museum">Jos Museum</option>
               </select>
+              {{-- <select name="tour_id" id="forLgn">
+                <option value="">-Select Tour-</option>
+                <option name="tour_id" value="1">Shere Hills</option>
+                <option name="tour_id" value="2">Jos Wild Life Park</option>
+                <option name="tour_id" value="3">Assop Falls</option>
+                <option name="tour_id" value="4">Kura Falls</option>
+                <option name="tour_id" value="5">Riyom Rocks</option>
+                <option name="tour_id" value="6">Solomon Lar Amusement Park</option>
+                <option name="tour_id" value="7">Kerang Volcanic Mountain</option>
+                <option name="tour_id" value="8">Pandam Game Reserve</option>
+                <option name="tour_id" value="9">Kahwang Rock Formation</option>
+                <option name="tour_id" value="10">Jos Museum</option>
+              </select> --}}
           </div> 
 
           

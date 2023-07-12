@@ -23,20 +23,22 @@
                         <th>Destination Name</th>
                         <th>Location</th>
                         <th>Address</th>
-                        <th>Action</th>
+                        <th></th>
                         </tr>
                          
                        
                         @foreach( $tours as $tour )
                           <tr>
-                              <td>{{$tour->destination_name}}</td> 
+                              <td>{{$tour->destination}}</td> 
                               <td>{{$tour->location}}</td> 
                               <td>{{$tour->address}}</td>
                           
                               <td>
                                   {{-- <a href="{{ route('bookings.edit',$booking->id)}}" class="actionbtn">Edit</a> --}}
-                                  <a href="/tours/{{$tour->id}}" class="actionbtn" id="actionbtn">view</a>
+                                  <a href="{{Route('tours.show',$tour->id)}}" class="actionbtn" id="actionbtn">view</a>
                               </td>
+                              <td><a href="{{Route('tour.delete',$tour->id)}}" class="actionbtn" id="actionbtn">Delete</a></td>
+
                         </tr>
                        
                         @endforeach

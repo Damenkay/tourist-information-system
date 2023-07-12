@@ -44,6 +44,7 @@ class BookingsController extends Controller
             'destination' => 'required',
             'arrival_time' => 'required',
         ]);
+       
 
         $booking = new Booking();
         $booking -> username = $request->username;
